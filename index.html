@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="scr.js"></script>
+    <title>Portafolio</title>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <a class="logo sin_deco" href="#inicio"><i class="fa-solid fa-house"></i></a>
+            <button class="barra">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="lista">
+                <li class="fase"><a href="#Proyectos" class="link sin_deco"><i class="fa-solid fa-briefcase"> Proyectos</i></a></li>
+                <li class="fase"><a href="#Tegnologias" class="link sin_deco"><i class="fa-solid fa-gears"> Tegnologias</i></a></li>
+                <li class="fase"><a href="#Contacto" class="link sin_deco"><i class="fa-regular fa-address-book"> Contacto</i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <section class="inicio" id="inicio">
+        <div class="perfil">
+         <img class="imga" src="https://i.pinimg.com/736x/0d/df/87/0ddf8765fc2dc64c7f69f20d29d1faa1.jpg" alt="">
+        </div>
+        <div class="texto">
+            <div class="info">
+                <h1 class="saludo">hola soy Gustavo</h1>
+                <p class="descripcion">Actualmente, soy estudiante del cuarto ciclo de la carrera de Ingeniería de Software en SENATI. 
+                    Estoy buscando una empresa donde pueda realizar mis prácticas profesionales, con el propósito de aplicar y ampliar 
+                    mis conocimientos.<br>Diseñe este portafolio con el proposito de mostra mis habilidades y un poco de informacion o proyectos.
+                </p>           
+            </div>
+            <div class="iconos">
+             <ul>
+                 <li><a href="https://github.com/LopezGustav0"><i class="fa-brands fa-github"> GitHub</i></a></li>
+                 <li><a href="https://www.linkedin.com/in/gustavo-lopez-tuanama-a673322bb/"><i class="fa-brands fa-linkedin"> Linkendin</i></a></li>
+                 <li><a href="img/CV-ACTUAL.pdf"><i class="fa-solid fa-file-pdf"> Descargar CV</i></a></li>  
+             </ul>
+            </div>
+        </div>
+        
+        
+     </section>
+    <section class="Proyectos" id="Proyectos">
+        <div class="carrusel">
+            <div class="items">
+                <div class="item">
+                    <h1 class="nomPro">Portafolio ver1.1</h1>
+                    <img src="img/proy1.png" alt="Slide 1">
+                    <a href="#"><i class="fa-solid fa-code"></i> Codigo</a>
+                    <a href="#"><i class="fa-solid fa-image"></i> Imagen</a>
+                </div>
+            </div>
+            <ul class="puntos">
+                <li class="punto activo"></li>
+                <li class="punto"></li>
+            </ul>
+        </div>
+     </section>
+     <section class="Tegnologias" id="Tegnologias">
+        <div class="Lenguaje">
+            <img class="ima" src="https://cdn-icons-png.flaticon.com/512/226/226777.png">
+            <h2>Java</h2>
+        </div>
+        <div class="Lenguaje">
+            <img  class="ima" src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png">
+            <h2>JavaScript</h2>
+        </div>
+        <div class="Lenguaje">
+            <img class="ima" src="https://cdn-icons-png.flaticon.com/128/732/732190.png">
+            <h2>CSS</h2>
+        </div>
+        <div class="Lenguaje">
+            <img  class="ima" src="https://cdn-icons-png.flaticon.com/128/732/732212.png">
+            <h2>HTML</h2>
+        </div>
+        <div class="Lenguaje">
+            <img class="ima" src="https://cdn-icons-png.flaticon.com/128/1387/1387537.png">
+            <h2>Python</h2>
+        </div>
+        <div class="Lenguaje">
+            <img  class="ima" src="https://cdn-icons-png.flaticon.com/128/5968/5968332.png">
+            <h2>PHP</h2>
+        </div>
+        <div class="Lenguaje">
+            <img  class="ima" src="https://cdn-icons-png.flaticon.com/128/15474/15474209.png">
+            <h2>Mysql</h2>
+        </div>
+     </section>
+     </section>
+     <section>
+     <section class="contacto" id="Contacto">
+         <label class="cont"><i class="fa-solid fa-envelope"> Contacto</i></label>
+         <form action="https://formsubmit.co/estudianteuno2@gmail.com" method="POST">
+             <label for="nombre">Nombre</label>
+             <input type="text" id="nombre" name="nombre" required>
+             <label for="email">Correo Electrónico</label>
+             <input type="email" id="email" name="email" required>
+             <label for="mensaje">Mensaje</label>
+             <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+             <button type="submit">Enviar Mensaje</button>
+             <input type="hidden" name="_next" value="https://lopezgustav0.github.io">
+         </form>
+     </section>
+    </section>
+    </main>
+</body>
+</html>

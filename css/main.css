@@ -1,0 +1,214 @@
+section{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 80px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.perfil{
+    margin: 20px 30px;
+}
+.imga{
+    border-radius: 50%;
+    width: 100%;
+}
+.texto{
+    margin: 40px;
+}
+.saludo{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.descripcion{
+    margin-bottom: 20px;
+}
+.iconos ul{
+    display: flex;
+}
+.iconos ul li{
+    margin-left: 30px;
+    
+    list-style: none;
+    width: max-content;
+    background-color: rgb(0, 0, 0);
+    padding: 8px;
+    border-radius: 25px;
+    transition: transform 0.5s ease;
+}
+.iconos ul li:hover{
+    transform: scale(1.2);
+    background-color: aqua;
+    cursor: pointer;
+    
+    
+}
+.iconos ul li a{
+    text-decoration: none;
+    color: white;
+}
+@media (max-width:768px){
+    .inicio{
+        flex-direction: column;
+    }
+    .perfil{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .iconos ul{
+        flex-direction: column;
+    }
+    .iconos ul li{
+        margin-top: 10px;
+    }
+}
+/*Proyectos*/
+.carrusel {
+    position: relative;
+    width: 100%;
+    max-width: 80%;
+    margin: 10px auto;
+    overflow: hidden;
+}
+.items {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+.item img {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 25px;
+}
+.item a{
+    margin-left: 30px;
+    background-color: #000000;
+    padding: 8px;
+    border-radius: 25px;
+    text-decoration: none;
+    color:white;
+    transition: transform 0.5s ease;
+}
+.item a:hover{
+    transform: scale(1,2);
+    cursor: pointer;
+    background-color: aqua;
+}
+.puntos {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 0;
+}
+.punto {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    background-color: #000000;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.activo {
+    background-color: #eff31e;
+}
+/*tegnologias*/
+.Tegnologias{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+.Lenguaje{
+    
+    width: 250px;
+    height: 130px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    display: flex;
+    border-radius: 20px;
+    transition: transform 0.3 ease;/*Duracion de transicion*/
+}
+.Lenguaje h2{
+    line-height: 130px;
+    margin-left: 20px;
+}
+.ima{
+    width: 50%;
+    margin: 20px 0px;
+}
+.Lenguaje:hover{/*Agranda el contenido*/
+    transform: scale(1.2);
+    border: 2px solid black;
+}
+@media  (max-width:768px){
+    .Tegnologias{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    }
+    .Lenguaje{
+        flex-direction: column;
+        width: 100px;
+        margin: 10px auto;
+
+    }.Lenguaje h2{
+    margin: 20px auto;
+    line-height: normal;
+        margin-right: auto;
+}
+    .ima{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+.contacto {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: grid;
+}
+.contacto h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+.contacto i {
+    display: block;
+    font-size: 50px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contacto label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+.contacto input, .contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.contacto button {
+    width: 100%;
+    padding: 10px;
+    background-color: aqua;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform(0.3s);
+}
+.contacto button:hover {
+    background-color: aqua;
+    transform: scale(1.2);
+}
